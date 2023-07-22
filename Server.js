@@ -36,7 +36,7 @@ app.use(methodOverride("_method"))
 
 // Configuring the register post functionality
 app.post("/login", checkNotAuthenticated, passport.authenticate("local", {
-  successRedirect: "/",
+  successRedirect: "https://employee-register-5hpk.onrender.com/",
   failureRedirect: "/login",
   failureFlash: true
 }))
